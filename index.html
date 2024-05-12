@@ -27,13 +27,15 @@
     <h1 class="lang en">Who's your guardian deity?</h1>
     <h1 class="lang zh" style="display: none;">你的守护神是谁？</h1>
 
-    <p class="lang en">This is where we can place additional information about this project
-        aka finding the goddess that suits them most</p>
-    <p class="lang zh" style="display: none;">这是我们可以放置有关这个项目的附加信息，即寻找最适合他们的神。</p>
+    <p class="lang en">Hi! This is where you can find out the deity that suits you the most</p>
+    <p class="lang zh" style="display: none;">这里是你可以找出最适合你的神明的地方。</p>
 
+    <input type="text" id="userName" class="lang en name-submit" placeholder="Enter your name">
+    <input type="text" id="userName" class="lang zh name-submit" style="display: none;" placeholder="输入名字">
+    
     <div class="start">
-    <button class="lang en button" onclick="window.location.href='file:./WildWestPage2.html'">Start</button>
-    <button class="lang zh button" style="display: none;" onclick="window.location.href='file:./WildWestPage2.html'">开始</button>        
+    <button class="lang en button" onclick="saveName(); window.location.href='file:./WildWestPage2.html'">Start</button>
+    <button class="lang zh button" style="display: none;" onclick="saveName(); window.location.href='file:./WildWestPage2.html'">开始</button>        
     <script src="./WildWestScript.js"></script>
     </div>
     <script src="./languageToggle.js"></script>
