@@ -120,8 +120,6 @@ h1 {
     }
 
   .start{
-    font-family: Georgia;
-    font-size: 30px;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -141,6 +139,8 @@ h1 {
     cursor: pointer;
     box-shadow: 10px 10px 7px rgb(170, 166, 162);
     transition-duration: 0.4s;
+    font-size: 25px;
+    font-family: Georgia;
   }
 
 .button:hover {
