@@ -120,6 +120,8 @@ h1 {
     }
 
   .start{
+    font-family: Georgia;
+    font-size: 30px;
     display: flex;
     justify-content: center;
     width: 100%;
