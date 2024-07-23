@@ -2,9 +2,12 @@ body {
   background-color: antiquewhite;
   margin: 0px;
   border: 0px;
+  font-size: 16px;
 }
 
 #outer{
+  max-width: 90%;
+  margin: 0 auto;
   display: grid;
   justify-content: center;
   color:rgb(62, 39, 13);
@@ -61,7 +64,8 @@ p{
 
 h1 {
     font-family: Helvetica;
-    font-size: 50px;
+    font-size: 2.5rem;
+    /* font-size: 50px; */
     text-align: center;
     width: 100%;
     height: 60px;
@@ -69,10 +73,12 @@ h1 {
 }
 
 .question{
+  font-size: 1.5rem;
+  /*font-size: 30px;*/
+  max-width: 90%;
+  /*max-width: 1200px;*/
   font-family: Georgia;
-  font-size: 30px;
   text-align: justify;
-  max-width: 1200px;
   margin: 60px auto 30px;
 }
 
@@ -155,6 +161,8 @@ h1 {
     align-items: center;
   }
   .image img{
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
     box-shadow: 10px 10px 7px rgb(170, 166, 162);
   }
@@ -213,6 +221,9 @@ h1 {
   }
 
   .deity-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: 10px solid rgb(235, 229, 222);
     background-color: rgb(235, 229, 222);
     box-shadow: 10px 10px 7px rgb(170, 166, 162);
@@ -235,4 +246,43 @@ h1 {
     font-size: 20px;    
     font-family: Georgia;
     color: black;
+  }
+
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+    
+    .question {
+      font-size: 1.2rem;
+    }
+    
+    .option label {
+      font-size: 1rem;
+    }
+
+    #language-toggle button, .button {
+      width: 120px;
+      height: 40px;
+      font-size: 0.9rem;
+    }
+    
+    .name-submit {
+      padding: 10px;
+      margin: 15px;
+      font-size: 16px;
+    }
+
+    .deity-card {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    body {
+      font-size: 14px;
+    }
+    
+    h1 {
+      font-size: 2rem;
+    }
   }
